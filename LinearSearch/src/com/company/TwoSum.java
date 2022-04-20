@@ -11,23 +11,13 @@ public class TwoSum {
     }
     static int[] twoSum(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){
-            int a=nums[i];
-            int b=target-nums[i];
-            if(a+b==target && a!=b){
-                int c=index(nums,a);
-                int d=index(nums,b);
-                return new int[]{c,d};
+            for(int j=i+1;j<nums.length;j++){
+                if(nums[j]==target-nums[i]){
+                    return new int[]{i,j};
+                }
             }
         }
         return new int[]{-1,-1};
     }
-    static int index(int[] arr, int num){
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]==num){
-                return i;
-            }
 
-        }
-        return -1;
-    }
 }

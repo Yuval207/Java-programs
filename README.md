@@ -1,1 +1,1 @@
-These are all the java programs that I am constantly working with while pursuing DSA in java. 
+These are all the java programs that I am constantly working with while pursuing DSA in java. I hope these programs will be helpful. If you find any errors or issues with this repo, feel free to create an issue to let me know.
